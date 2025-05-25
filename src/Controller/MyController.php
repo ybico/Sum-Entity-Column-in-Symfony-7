@@ -15,4 +15,5 @@ final class MyController extends AbstractController
   {
     return $this->render('my_index.html.twig', ['colOrderTotalSum' => $myEntityRepository->SumOrderTotal(),]);
   }
+  ...
 }
