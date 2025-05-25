@@ -19,7 +19,7 @@ class MyEntityRepository extends ServiceEntityRepository
   public function SumOrderTotal(): float
   {
     $result = $this->createQueryBuilder('myalias')
-        ->select('SUM(myalias.order_total) AS eu1')
+        ->select('SUM(myalias.order_total) AS orderTotal')
         ->getQuery()
         ->getSingleScalarResult();
     // dd($result);  // check outcome
