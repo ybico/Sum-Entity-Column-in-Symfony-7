@@ -15,7 +15,7 @@ class MyEntityRepository extends ServiceEntityRepository
       parent::__construct($registry, MyEntity::class);
   }
   
-  // function returns the sum of the column order_total as a float type
+  // function returns the sum of the column order_total as a float number
   public function SumOrderTotal(): float
   {
     $result = $this->createQueryBuilder('myalias')
