@@ -1,0 +1,10 @@
+templates/my_index.html.twig
+{% extends 'base.html.twig' %}
+
+{% block title %}MyHomePage{% endblock %}
+
+{% block body %}
+
+  <p>{{ colOrderTotalSum | format_number(style: 'currency', locale: 'en_us') }}</p>
+
+{% endblock %}
